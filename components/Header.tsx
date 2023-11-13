@@ -25,9 +25,8 @@ export default function Header() {
                   'horizontal-underline-active': pathName === '/',
                 }
               )}
-              aria-label="d."
             >
-              d.
+              ibu
             </Link>
           </div>
           <div className="flex items-center space-x-3 text-base leading-5">
