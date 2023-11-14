@@ -1,7 +1,11 @@
-import type { Metadata } from 'next'
-import './globals.css'
-import Header from '@/components/Header'
+import '@/css/prism.css';
+import '@/css/tailwind.css';
+import '@fontsource/mukta';
 
+import type { Metadata } from 'next'
+import Header from '@/components/Header'
+import ThemeProvider from '@/components/Providers/themeProvider'
+import LenisProvider from '@/components/Providers/LenisProvider'
 
 export const metadata: Metadata = {
   title: "Ibus's Portfolio",
@@ -18,8 +22,16 @@ export default function RootLayout({
       <head>
       </head>
       <body>
-        <Header/>
-        {children}
+        {/* <ThemeProvider attribute='class' defaultTheme='dark' enableSystem > */}
+
+          <Header />
+          <LenisProvider >
+            <main>
+              {children}
+            </main>
+          </LenisProvider>
+
+        {/* </ThemeProvider> */}
       </body>
     </html>
   )

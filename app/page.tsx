@@ -1,9 +1,14 @@
 import Hero from '@/components/Hero'
+import Works from '@/components/Work/Works'
+import { ScrollProvider } from '@/components/Providers/ScrollProvider';
 
-export default function Home() {
+const Home =() => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <Hero />
-    </main>
+    <ScrollProvider>
+      <Hero />
+      <Works />
+    </ScrollProvider>
   )
 }
+
+export default Home;
