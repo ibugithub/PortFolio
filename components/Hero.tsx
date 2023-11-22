@@ -34,12 +34,6 @@ const  Hero = () => {
               <h2 className="text-3xl font-medium opacity-80 sm:text-6xl md:text-6xl xl:text-7xl">
                 A Full-Stack Web Developer.
               </h2>
-              <Link
-                href="/about"
-                className="underline-magical text-md w-max cursor-pointer sm:text-lg md:text-xl xl:text-2xl"
-              >
-                Read more about me &rarr;
-              </Link>
             </div>
             <motion.div
               animate={{

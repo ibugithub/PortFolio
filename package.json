@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fontsource/mukta": "5.0.17",
+    "@jdion/tilt-react": "^1.0.0",
     "@studio-freight/react-lenis": "0.0.36",
     "classnames": "2.3.2",
     "cmdk": "0.2.0",
