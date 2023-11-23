@@ -4,8 +4,7 @@ import '@fontsource/mukta';
 
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
-import ThemeProvider from '@/components/Providers/themeProvider'
-import LenisProvider from '@/components/Providers/LenisProvider'
+import LenisProvider from '@/components/providers/LenisProvider'
 
 export const metadata: Metadata = {
   title: "Ibus's Portfolio",
