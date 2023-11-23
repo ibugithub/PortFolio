@@ -8,7 +8,7 @@ import usePaletteOptions from './usePaletteOptions';
 export default function CommandPalette() {
   const [open, setOpen] = useState(false);
 
-  const { pageOptions, blogOptions, generalOptions } = usePaletteOptions();
+  const { pageOptions, generalOptions } = usePaletteOptions();
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -54,7 +54,7 @@ export default function CommandPalette() {
             ))}
           </Command.Group>
 
-          <Command.Group heading="Blogs">
+          {/* <Command.Group heading="Blogs">
             {blogOptions.map(({ id, name, onSelect, icon }) => (
               <CommandItem
                 id={id}
@@ -65,7 +65,7 @@ export default function CommandPalette() {
                 onSelect={onSelect}
               />
             ))}
-          </Command.Group>
+          </Command.Group> */}
         </Command.List>
       </Command.Dialog>
     </>
