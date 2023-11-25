@@ -1,4 +1,4 @@
-import slugger from 'github-slugger';
+import slugger from 'github-slugger'
 import { Heading } from 'mdast';
 import { toString } from 'mdast-util-to-string';
 import { remark } from 'remark';
