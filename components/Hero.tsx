@@ -34,24 +34,7 @@ const  Hero = () => {
                 A Full-Stack Web Developer.
               </h2>
             </div>
-            <motion.div
-              animate={{
-                transform: `translateY(${progress * 10}vh)`,
-              }}
-              className="absolute bottom-4 left-1/2 -translate-x-1/2 transform md:bottom-8"
-            >
-              <div
-                role="presentation"
-                className="flex cursor-pointer flex-col items-center justify-center"
-                onClick={() => {
-                  const intro = document.querySelector('#intro');
 
-                  intro?.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                <HiOutlineArrowNarrowDown size={20} />
-              </div>
-            </motion.div>
           </div>
         </div>
       </div>
