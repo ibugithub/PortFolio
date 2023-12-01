@@ -4,6 +4,7 @@ import '@fontsource/mukta';
 
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
+import ThemeProvider from '@/components/providers/themeProvider';
 import LenisProvider from '@/components/providers/LenisProvider'
 
 export const metadata: Metadata = {
@@ -20,8 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
       </head>
-      <body>
-        {/* <ThemeProvider attribute='class' defaultTheme='dark' enableSystem > */}
+      <body className="bg-white  text-black dark:bg-black dark:text-white">
+        <ThemeProvider attribute='class' defaultTheme='dark' enableSystem >
 
           <Header />
           <LenisProvider >
@@ -30,7 +31,7 @@ export default function RootLayout({
             </main>
           </LenisProvider>
 
-        {/* </ThemeProvider> */}
+        </ThemeProvider>
       </body>
     </html>
   )
