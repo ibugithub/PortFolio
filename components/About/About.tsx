@@ -1,6 +1,16 @@
+"use client"
+
 import React from "react";
+import resumePDF from "./resume.pdf";
 
 const About = () => {
+  const handleDownload = () => {
+    // const link = document.createElement('a');
+    // link.href = resumePDF;
+    // link.download = 'resume.pdf';
+    // link.click();
+    window.open(resumePDF, '_blank');
+  };
   return (
     <div className="mx-auto w-screen max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0 mb-16">
     
@@ -11,7 +21,9 @@ const About = () => {
 
       </p>
 
-      <button type="button" className=" bg-green-200 p-5 rounded mt-5">
+      <button type="button" className=" bg-green-200 p-5 rounded mt-5"
+      onClick={handleDownload}
+      >
         Download the CV
       </button>
     </div>
