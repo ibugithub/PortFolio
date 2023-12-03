@@ -1,15 +1,11 @@
 "use client"
 
 import React from "react";
-import resumePDF from "./resume.pdf";
+import resumePDF from "./resume/resume.pdf";
 
 const About = () => {
   const handleDownload = () => {
-    // const link = document.createElement('a');
-    // link.href = resumePDF;
-    // link.download = 'resume.pdf';
-    // link.click();
-    window.open(resumePDF, '_blank');
+    window.location.href = resumePDF;
   };
   return (
     <div className="mx-auto w-screen max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0 mb-16">
