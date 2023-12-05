@@ -4,6 +4,7 @@ import { ScrollProvider } from '@/components/providers/ScrollProvider';
 import About from '@/components/About/About';
 import Footer from '@/components/Footer';
 import Tech from '@/components/Tech/Tech';
+import Contact from '@/components/Contact/Contact';
 
 const Home =() => {
   return (
@@ -12,6 +13,7 @@ const Home =() => {
       <About />
       <Tech />
       <Works />
+      <Contact />
       <Footer />
     </ScrollProvider>
   )
