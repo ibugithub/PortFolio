@@ -7,18 +7,14 @@ import { usePathname } from 'next/navigation';
 import MobileNav from './MobileNav';
 import SectionContainer from './SectionContainer';
 import ThemeSwitch from './ThemeSwitch';
-import { useTheme } from 'next-themes';
 
 export default function Header() {
   const pathName = usePathname();
-  const { theme } = useTheme();
-  const inputTextColor = theme === 'dark' ? 'text-white' : 'text-black';
-
   return (
     <SectionContainer>
       <header className="z-40 bg-transparent py-5 md:py-10">
         <div className="mx-auto flex max-w-5xl items-center justify-between">
-          <div className={`${inputTextColor}`}>
+          <div className="text-black dark:text-white">
             <Link
               href="/"
               className={classNames(

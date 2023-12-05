@@ -2,17 +2,14 @@
 
 import React from "react";
 import resumePDF from "./resume/resume.pdf";
-import { useTheme } from 'next-themes';
 
 const About = () => {
   const handleDownload = () => {
     window.open(resumePDF, "_blank");
   };
-  const { theme } = useTheme();
-  const inputTextColor = theme === 'dark' ? 'text-white' : 'text-black';
 
   return (
-    <div className={ `mx-auto w-screen max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0 mb-16 ${inputTextColor}` }>
+    <div className={ `mx-auto w-screen max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0 mb-16 text-black dark:text-white` }>
     
       <h2 id="about" className="text-[35px] font-bold">INTRODUCTION</h2>
 
