@@ -1,6 +1,7 @@
 'use client'
 
 const Contact = () => {
+
   return (
     <>
       <form className="flex flex-col gap-4 justify-center items-center mt-32">
@@ -14,7 +15,7 @@ const Contact = () => {
 
             <div className="flex flex-col ">
               <label className="text-emerald-900 " htmlFor="name">Your Name:</label>
-              <input  className="border-green-500 outline-none" type="text" id="name" placeholder="Enter Your Name"
+              <input  className="border-green-500 outline-none " type="text" id="name" placeholder="Enter Your Name"
               />
             </div>
 

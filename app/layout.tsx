@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
       </head>
-      <body className="bg-white  text-black dark:bg-black dark:text-white">
+      <body className="bg-white text-black antialiased dark:bg-black dark:text-white">
         <ThemeProvider attribute='class' defaultTheme='dark' enableSystem >
 
           <Header />
