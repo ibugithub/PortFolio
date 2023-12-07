@@ -4,7 +4,7 @@ import { ScrollProvider } from '@/components/providers/ScrollProvider';
 import About from '@/components/About/About';
 import Footer from '@/components/Footer';
 import Tech from '@/components/Tech/Tech';
-import Contact from '@/components/Contact/Contact';
+import Contact from '@/components/Contact';
 
 const Home =() => {
   return (
